@@ -19,7 +19,7 @@
 // arr.shift();  //Delete the element from Array in the start
 // console.log(arr);
 
-// console.log(arr.includes(9));
+// console.log(arr.includes(9));// check the 9 element the array is present or not
 
 // console.log(arr.indexOf(6));
 // console.log(arr);
@@ -35,8 +35,6 @@
 //  splice(): The splice() method is used to change the contents of an array by removing or replacing existing elements and/or adding new elements in place.
 
 // let newArr = [2, 4, 6, 8];
-// // let Arr1 = ["A", newArr];
-// // console.log(Arr1);
 // // let num1 = newArr.slice(1, 3);
 // // console.log(num1);//[ 4, 6 ]
 // // console.log(newArr);//[ 2, 4, 6, 8 ]
@@ -59,15 +57,15 @@
 // let Real_Another_Arr = another_Arr.flat(Infinity);
 // console.log(Real_Another_Arr);
 
-console.log(Array.isArray("Deepa"));
-console.log(Array.from("Deepa"));
-console.log(Array.from({ name: "Deepa" })); // Interesting case
+// console.log(Array.isArray("Deepa"));
+// console.log(Array.from("Deepa"));
+// console.log(Array.from({ name: "Deepa" })); // Interesting case
 
-//if you want to convert variable in Arry
+// //if you want to convert variable in Arry
 
-let score1 = 100;
-let score2 = 200;
-let score3 = 300;
-let score4 = 400;
+// let score1 = 100;
+// let score2 = 200;
+// let score3 = 300;
+// let score4 = 400;
 
-console.log(Array.of(score1, score2, score3, score4));
+// console.log(Array.of(score1, score2, score3, score4));
