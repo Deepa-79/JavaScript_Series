@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Event Learning</title>
+  </head>
+  <body style="background-color: rgba(0, 0, 0, 0.539); color: white">
+    <h2>Amezing Image</h2>
+    <ul id="laptops">
+      <li>
+        <img
+          src="https://images.unsplash.com/photo-1531297484001-80022131f5a1?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8dGVjaG5vbG9neXxlbnwwfHwwfHx8MA%3D%3D"
+          alt="laptop"
+          height="200px"
+          width="200px"
+          id="laptop1"
+        />
+      </li>
+      <li>
+        <img
+          src="https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8d2ViJTIwZGV2ZWxvcGVyfGVufDB8fDB8fHww"
+          alt=" laptop2"
+          height="200px"
+          width="200px"
+          id="laptop2"
+        />
+      </li>
+      <li>
+        <img
+          src="https://images.unsplash.com/photo-1624996752380-8ec242e0f85d?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fHdlYiUyMGRldmVsb3BlcnxlbnwwfHwwfHx8MA%3D%3D"
+          alt=" laptop3"
+          height="200px"
+          width="200px"
+          id="laptop3"
+        />
+      </li>
+      <li>
+        <img
+          src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fHdlYiUyMGRldmVsb3BlcnxlbnwwfHwwfHx8MA%3D%3D"
+          alt=" people"
+          height="200px"
+          width="200px"
+          id="laptop4"
+        />
+        />
+      </li>
+      <li>
+        <a
+          href="www.google.com"
+          style="color: aliceblue; text-decoration: none"
+        >
+          Google</a
+        >
+      </li>
+    </ul>
+  </body>
+
+  <script>
+    // document.getElementById("laptop2").onclick = function () {
+    //   alert("laptop clicked");
+    // };
+
+    // attachEvent()
+    // jQuery - on
+
+    // type, timestamp, defaultPrevented
+    // target, toElement, srcElement, currentTarget,
+    // clientX, clientY, screenX, screenY
+    // altkey, ctrlkey, shiftkey, keyCode
+    // Bubble Events =true /false
+
+    document.getElementById("laptops").addEventListener(
+      "click",
+      function (e) {
+        console.log("clicked inside the ul");
+      },
+      false
+    );
+
+    document.getElementById("laptop1").addEventListener(
+      "click",
+      function (e) {
+        console.log("laptop clicked");
+        // e.stopPropagation();
+      },
+      false
+    );
+
+    // document.getElementById('google').addEventListener('click',function(e){
+    //     e.preventDefault();
+    //     e.stopPropagation()
+    //     console.log("google clicked");
+    // }, false)
+
+    // document.querySelector('#images').addEventListener('click', function(e){
+    //     console.log(e.target.tagName);
+    //     if (e.target.tagName === 'IMG') {
+    //         console.log(e.target.id);
+    //         let removeIt = e.target.parentNode
+    //         removeIt.remove()
+    //     }
+
+    // })
+
+    //removeIt.parentNode.removeChild(removeIt)
+  </script>
+</html>
