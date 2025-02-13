@@ -26,5 +26,19 @@
     }
     // addlang("Python");
     addoptilang("C++ programming");
+
+    //Edit
+    let secondLang = document.querySelector("li:nth-child(2)");
+    secondLang.innerHTML = "java";
+
+    //edit
+
+    let FirstLang = document.querySelector("li:first-child");
+    FirstLang.outerHTML = " <li> TypeScript <li>";
+
+    //Remove
+
+    let Lastlang = document.querySelector("li:last-child");
+    Lastlang.remove();
   </script>
 </html>
